@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/pad_10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_profile"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pad_15dp"
+        android:paddingTop="@dimen/pad_10dp"
+        android:paddingRight="@dimen/pad_15dp"
+        android:paddingBottom="@dimen/pad_5dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/pad_60dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/pad_8dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_user_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_user_icon" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/pad_5dp">
+
+            <com.gaicomo.app.views.AppTextView
+                android:id="@+id/tv_name"
+                style="@style/MyEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:orientation="horizontal">
+
+
+                <com.gaicomo.app.views.AppTextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/txt_13sp" />
+
+
+                <com.gaicomo.app.views.AppTextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad_5dp"
+                    android:drawableLeft="@drawable/dot"
+                    android:drawablePadding="@dimen/pad_3dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/txt_13sp" />
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/pad_60dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/pad_15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.gaicomo.app.views.AppTextView
+                android:id="@+id/tv_description"
+                style="@style/MyEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pad_10dp"
+                android:layout_marginLeft="@dimen/pad_5dp"
+                />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pad_10dp">
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_tweet"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:layout_marginEnd="0dp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/pad_8dp"
+                app:layout_constraintDimensionRatio="16:7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/iv_tweet_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+            </android.support.v7.widget.CardView>
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:padding="@dimen/pad_5dp"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/unlike" />
+
+                <com.gaicomo.app.views.AppTextView
+                    android:id="@+id/tv_likes_count"
+                    style="@style/MyEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad_5dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_1dp"
+                android:id="@+id/view"
+                android:background="@color/recycler_color"
+                android:layout_marginTop="@dimen/pad_8dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

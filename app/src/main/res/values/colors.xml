@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C7C7C7</color>
+    <color name="colorPrimaryDark">#C7C7C7</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="purple">#454DA9</color>
+    <color name="gray">#b6b4b4</color>
+    <color name="background">#FEFEFE</color>
+    <color name="text_dark">#696969</color>
+    <color name="background_color">#bcb7b7</color>
+    <color name="button_color">#0298F5</color>
+    <color name="welcome_color">#4B4B4B</color>
+    <color name="bottom_line_color">#011031</color>
+    <color name="connected">#228B22</color>
+    <color name="notifiaction_bg">#F1FCFE</color>
+    <color name="recycler_color">#F1F1F1</color>
+
+
+</resources>

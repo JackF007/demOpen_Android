@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#C7C7C7</item>
+        <item name="colorPrimaryDark">#C7C7C7</item>
+        <item name="colorAccent">@color/text_dark</item>
+    </style>
+
+    <style name="CustomProgress" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Please wait..</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="DialogSpotColor">@color/bottom_line_color</item>
+        <item name="DialogSpotCount">5</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="TextViewStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/txt_13sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="MyEditTextStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/text_dark</item>
+        <item name="colorControlActivated">@color/text_dark</item>
+        <item name="android:textSize">@dimen/txt_15sp</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="colorControlNormal">@color/text_dark</item>
+        <item name="colorControlActivated">@color/text_dark</item>
+        <item  name="colorControlHighlight">@color/text_dark</item>
+        <item name="android:textColorHint">@color/text_dark</item>
+        <item name="android:textSize">@dimen/txt_18sp</item>
+    </style>
+
+    <style name="datepickerlolipop" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="datepickerkitkat" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--<style name="progress" parent="android:Widget.ProgressBar.Horizontal">-->
+    <!--<item name=""-->
+    <!--</style>-->
+</resources>

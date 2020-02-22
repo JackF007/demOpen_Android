@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="200dp"
+                android:layout_height="420dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/half_circle" />
+
+            <FrameLayout
+                android:id="@+id/fl_icons"
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="-100dp"
+                android:layout_toRightOf="@+id/iv_logo">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/ivCommunication"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/communications_home"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/ivInvestment"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/foreign_investment_home"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/ivTweet"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/tweets"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/ivCompetition"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/cometitions_home"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/ivOpenData"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/open_data_home"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.gaicomo.app.views.AppTextView
+                        android:id="@+id/tvCommunication"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="35dp"
+                        android:gravity="top"
+                        android:text="@string/communication"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+                    <com.gaicomo.app.views.AppTextView
+                        android:id="@+id/tvInvestment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="115dp"
+                        android:layout_marginTop="50dp"
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:maxLines="1"
+                        android:text="@string/foreign_investment_call"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+                    <com.gaicomo.app.views.AppTextView
+                        android:id="@+id/tvTweet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="70dp"
+                        android:gravity="center"
+                        android:text="@string/tweets"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+                    <com.gaicomo.app.views.AppTextView
+                        android:id="@+id/tvCompetition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="115dp"
+                        android:layout_marginTop="75dp"
+                        android:gravity="center"
+                        android:text="@string/competition"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+                    <com.gaicomo.app.views.AppTextView
+                        android:id="@+id/tvOpenData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="60dp"
+                        android:gravity="bottom"
+                        android:text="@string/open_data"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeModule.fragment.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_50dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_cross"
+                android:padding="@dimen/pad_10dp"
+                android:src="@drawable/cancel"/>
+
+            <com.gaicomo.app.views.AppEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:id="@+id/et_search"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_search"
+                android:padding="@dimen/pad_10dp"
+                android:src="@drawable/search_icon"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_15dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_tool_bar"
+            android:background="@drawable/shadow">
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:id="@+id/recycler_tag">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.gaicomo.app.views.AppTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_no_match"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/no_match_found"/>
+    </LinearLayout>
+
+</RelativeLayout>

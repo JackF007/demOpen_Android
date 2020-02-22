@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_offset">5dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+
+
+    <dimen name="pad_1dp">1dp</dimen>
+    <dimen name="pad_2dp">2dp</dimen>
+    <dimen name="pad_3dp">3dp</dimen>
+    <dimen name="pad_4dp">4dp</dimen>
+    <dimen name="pad_5dp">5dp</dimen>
+    <dimen name="pad_6dp">6dp</dimen>
+    <dimen name="pad_7dp">7dp</dimen>
+    <dimen name="pad_8dp">8dp</dimen>
+    <dimen name="pad_10dp">10dp</dimen>
+    <dimen name="pad_15dp">15dp</dimen>
+    <dimen name="pad_20dp">20dp</dimen>
+    <dimen name="pad_23dp">23dp</dimen>
+    <dimen name="pad_25dp">25dp</dimen>
+
+    <dimen name="pad_30dp">30dp</dimen>
+    <dimen name="pad_40dp">40dp</dimen>
+    <dimen name="pad_50dp">50dp</dimen>
+    <dimen name="pad_60dp">60dp</dimen>
+    <dimen name="pad_70dp">70dp</dimen>
+    <dimen name="pad_80dp">80dp</dimen>
+    <dimen name="pad_90dp">90dp</dimen>
+    <dimen name="pad_100dp">100dp</dimen>
+    <dimen name="pad_120dp">120dp</dimen>
+    <dimen name="pad_125dp">125dp</dimen>
+    <dimen name="pad_130dp">130dp</dimen>
+    <dimen name="pad_140dp">140dp</dimen>
+    <dimen name="pad_150dp">150dp</dimen>
+    <dimen name="pad_160dp">160dp</dimen>
+    <dimen name="pad_170dp">170dp</dimen>
+    <dimen name="pad_180dp">180dp</dimen>
+    <dimen name="pad_185dp">185dp</dimen>
+    <dimen name="pad_190dp">190dp</dimen>
+    <dimen name="pad_200dp">200dp</dimen>
+    <dimen name="pad_250dp">250dp</dimen>
+    <dimen name="pad_310dp">310dp</dimen>
+    <dimen name="pad_350dp">350dp</dimen>
+
+
+    <dimen name="tab_height">70dp</dimen>
+    <dimen name="icon_height">50dp</dimen>
+
+    <dimen name="txt_7sp">7sp</dimen>
+    <dimen name="txt_10sp">10sp</dimen>
+    <dimen name="txt_11sp">11sp</dimen>
+    <dimen name="txt_12sp">12sp</dimen>
+    <dimen name="txt_13sp">13sp</dimen>
+    <dimen name="txt_14sp">14sp</dimen>
+    <dimen name="txt_15sp">15sp</dimen>
+    <dimen name="txt_16sp">16sp</dimen>
+    <dimen name="txt_18sp">18sp</dimen>
+    <dimen name="txt_20sp">20sp</dimen>
+    <dimen name="txt_25sp">25sp</dimen>
+    <dimen name="txt_30sp">30sp</dimen>
+    <dimen name="divider">0.5dp</dimen>
+
+
+    <dimen name="minus_15dp">-15dp</dimen>
+    <dimen name="minus_40dp">-40dp</dimen>
+</resources>

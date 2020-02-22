@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recycler_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/pad_20dp"
+    tools:context="com.gaicomo.app.ForeignInvestmentCall.fragment.ForeignInvestmentListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_top"
+        android:weightSum="10"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"/>
+
+        <com.gaicomo.app.views.AppTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_category"
+            android:textSize="@dimen/txt_15sp"
+            android:layout_weight="4"
+            android:textColor="@color/bottom_line_color"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/pad_5dp"
+            android:paddingBottom="@dimen/pad_15dp"
+            android:text="@string/category"/>
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"/>
+
+        <com.gaicomo.app.views.AppTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_15sp"
+            android:layout_weight="3"
+            android:textStyle="bold"
+            android:textColor="@color/bottom_line_color"
+            android:gravity="center"
+            android:background="@drawable/blue_bottom_stroke"
+            android:paddingTop="@dimen/pad_5dp"
+            android:paddingBottom="@dimen/pad_15dp"
+            android:text="@string/tweets"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_below="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_tweets"
+                android:layout_marginBottom="@dimen/pad_5dp"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <com.gaicomo.app.views.AppTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_no_data"
+                android:gravity="center"
+                android:text="@string/no_data_found"
+                android:textSize="@dimen/txt_20sp"
+                android:visibility="gone"
+                android:textColor="@color/bottom_line_color"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_post"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/pad_20dp"
+        android:layout_marginBottom="@dimen/pad_30dp"
+        android:src="@drawable/edit_icon"
+        app:backgroundTint="@color/button_color"
+        app:fabSize="normal"
+        android:scaleType="center"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

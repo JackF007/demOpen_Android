@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.gaicomo.app.views.AppTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tag"
+        android:padding="@dimen/pad_8dp"
+        style="@style/TextViewStyle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_1dp"
+        android:background="@color/recycler_color"
+        />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".common.fragment.WebFragment">
+
+  <WebView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"
+      android:id="@+id/webView">
+
+  </WebView>
+
+
+    <com.gaicomo.app.views.AppTextView
+        android:id="@+id/tvTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_18sp"
+        android:gravity="center"
+        android:text="@string/something_went_wrong_click_to_retry"
+        android:textColor="@color/bottom_line_color"
+        android:padding="@dimen/pad_10dp"
+        android:visibility="gone"
+       />
+
+</LinearLayout>

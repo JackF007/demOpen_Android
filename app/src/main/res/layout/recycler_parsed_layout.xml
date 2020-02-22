@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_marginLeft="@dimen/pad_5dp"
+    android:layout_marginRight="@dimen/pad_5dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/pad_10dp"
+        android:layout_margin="@dimen/pad_5dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_80dp"
+            android:minHeight="@dimen/pad_50dp"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/pad_10dp"
+            android:paddingLeft="@dimen/pad_10dp"
+            android:orientation="vertical">
+
+
+            <com.gaicomo.app.views.AppTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/pad_3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pad_3dp"
+                android:paddingRight="@dimen/pad_3dp"
+                android:textColor="@color/welcome_color"
+                android:textSize="@dimen/txt_14sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <com.gaicomo.app.views.AppTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_description"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/pad_3dp"
+                android:paddingRight="@dimen/pad_3dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_12sp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

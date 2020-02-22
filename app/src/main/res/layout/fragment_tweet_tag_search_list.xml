@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recycler_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/pad_20dp"
+    tools:context="com.gaicomo.app.ForeignInvestmentCall.fragment.ForeignInvestmentListFragment">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_below="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_tweets"
+                android:layout_marginBottom="@dimen/pad_5dp"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <com.gaicomo.app.views.AppTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_no_data"
+                android:gravity="center"
+                android:text="@string/no_data_found"
+                android:textSize="@dimen/txt_20sp"
+                android:visibility="gone"
+                android:textColor="@color/bottom_line_color"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1061412380391",
+    "firebase_url": "https://giacomo-819b7.firebaseio.com",
+    "project_id": "giacomo-819b7",
+    "storage_bucket": "giacomo-819b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061412380391:android:16d96602ca2d7ad2",
+        "android_client_info": {
+          "package_name": "com.gaicomo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061412380391-lv0gtn39cabggggtipcsmqbmoigua4j8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaicomo.app",
+            "certificate_hash": "c7a81b74971eac13d5830853e36e8b457cd7075f"
+          }
+        },
+        {
+          "client_id": "1061412380391-cv836pbjpb7p92vrpl841n6a1l595k35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnj8wrmsGBiViustc0tla5VcTuu5VSMSo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061412380391-cv836pbjpb7p92vrpl841n6a1l595k35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
